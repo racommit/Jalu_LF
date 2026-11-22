@@ -1,42 +1,75 @@
-# Jalu_LF 🏎🚗
-Adalah sebuah proyek robot line follower dalam mengampu mata kuliah microcontroller, yang dikenal dengan sapaan Jalu sebagai nama dari robot line follower yang dibuat.
+# Jalu_LF 🏎️🚗
 
+**Jalu_LF** is an Arduino-based Line Follower Robot project developed as part of a Microcontroller course. The robot is affectionately named **Jalu**, representing the robot built and programmed by our team.
 
-# Teknologi 🔗🔗
-Teknologi yang diterapkan pada proyek kali ini yaitu :
-- Arduino Uno (DIP or SMD)
-- L298N Motor Driver
-- Modul sensor infrared 5 item (kiri2, kiri1, tengah, kanan1, kanan2)
-- Motor DC
+The project focuses on implementing microcontroller concepts, infrared sensor integration, motor control, and basic autonomous navigation.
+
+## 🔗 Technologies & Components
+
+The robot is built using the following hardware components:
+
+- **Arduino Uno** (DIP or SMD)
+- **L298N Motor Driver**
+- **5-Channel Infrared Sensor Module**
+  - Far Left (L2)
+  - Left (L1)
+  - Center
+  - Right (R1)
+  - Far Right (R2)
+- **DC Motors**
+- Battery as the power supply
+
+## 📸 Project Gallery
 
 ![Brandon VIEW](https://github.com/racommit/Brandon_LF/blob/main/foto%201.jpg)
 
+## ⚙️ Project Description
 
-# Deskripsi
-Pada percobaan yang telah dilakukan terdapat banyak faktor yang dapat mempengaruhi kinerja dari si Jalu Line follower, adapun bagi kawan para pengembang dapat menyesuaikan beberapa keadaan sesuai dengan realita percobaan, pembuat kali ini akan menyebutkan beberapa faktor yang dapat mempengaruhi kinerja line follower yaitu :
-- kedekatan posisi sensor dengan alas (pembuat menyarankan untuk menempatkan sensor menempel dengan alas/lantai)
-- kecepatan motor DC sesuai kecepatan pembacaan sensor
-- kapasitas baterai
-- Logic dari sebuah fungsi
+Throughout the development and testing process, we identified several factors that significantly affect the performance and stability of Jalu as a line follower robot.
 
-Poin-poin di atas didapat berdasarkan pada hasil percobaan yang telah dilakukan, adapun hal-hal diatas akan berbeda beda dari setiap line follower yang dibuat dan medan yang dilalui untuk kemudian dapat disesuaikan menurut kriteria masing-masing.
+For fellow developers who want to build or modify a similar robot, here are some important considerations based on our experimental results:
 
+### 1. Sensor-to-Surface Distance
 
-# Catatan
-Pembuat mengupdate rangkaian file program pada branch ![penambahan-fungsi](https://github.com/racommit/Jalu_LF/tree/penambahan-fungsi) adapun branch main akan diupdate setiap 2 minggu sekali.
+The distance between the infrared sensors and the track surface affects sensor readings. We recommend positioning the sensors as close to the ground as possible to achieve more consistent detection.
 
-Credit by 4th Group team
-- Ahmad Aldisar Syarifuddin (Technician support).
-- Patansyah (Technician support).
-- Reno Isnan Suwarno (Technician support, Project Idea).
-- Rizky Agusti (Technician support, Programmer, Project Idea).
+### 2. DC Motor Speed
+
+Motor speed should be adjusted according to the sensor reading frequency. Excessive motor speed may cause the robot to lose track of the line, especially when navigating curves.
+
+### 3. Battery Capacity
+
+Battery capacity and voltage stability directly influence motor performance and the overall reliability of the robot.
+
+### 4. Control Logic
+
+The logic implemented in the program plays an important role in determining how the robot responds to sensor inputs. Proper conditional statements and motor control algorithms are essential for accurate line tracking.
+
+**Note:** These considerations are based on our team's experimental observations. Actual performance may vary depending on hardware configurations, component specifications, track conditions, and environmental factors. Developers are encouraged to experiment and adjust their implementations accordingly.
+
+## 📝 Development Notes
+
+The latest program updates and additional functions are maintained in the following branch:
+
+- [penambahan-fungsi](https://github.com/racommit/Jalu_LF/tree/penambahan-fungsi)
+
+The `main` branch is intended to be updated every two weeks to keep the primary version synchronized with the project's development progress.
+
+## 👥 Credits & Contributors
+
+**Developed by the 4th Group Team**
+
+| Contributor | Role |
+|---|---|
+| Ahmad Aldisar Syarifuddin | Technician Support |
+| Patansyah | Technician Support |
+| Reno Isnan Suwarno | Technician Support, Project Idea |
+| Rizky Agusti | Technician Support, Programmer, Project Idea |
+
+## 👨‍💻 Project Owner
 
 ![Owner](https://github.com/racommit/Jalu_LF/blob/main/owner.jpg)
 
+---
 
-
-
-
-
-
-
+*Built with curiosity, teamwork, and a passion for robotics.* 🏎️
